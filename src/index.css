@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100dvh;
+  overscroll-behavior: none;
+  background: radial-gradient(120% 90% at 50% 0%, #0f4c97 0%, #07214f 60%, #04132f 100%);
+  font-family: 'DM Sans', ui-sans-serif, sans-serif;
+  color: #0b1f3a;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', 'DM Sans', ui-sans-serif, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 28px rgba(4, 19, 47, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
